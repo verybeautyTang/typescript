@@ -1,16 +1,15 @@
-import {outputPath} from './config/paths'
-
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const outputPath = require('./config/paths')
 
 module.exports  = {
   entry: '../src/index.ts',
   output: {
       filename: 'bundle.js',
-      path: outputPath,
+      // path: outputPath,
   },
   resolve: {
-    extention: ['.js .ts .tsx .jsx'],
+    extensions: ['.js .ts .tsx .jsx'],
   },
   module: {
     rules:[{
@@ -19,11 +18,12 @@ module.exports  = {
       exclude: /node_modules/,
     }]
   },
+  stats:' errors-only',
   devtool: process.env.NODE.ENV === 'production' ? '' : 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    // contentBase: './dist',
     hot: true,
-    stats:' errors-only',
+    
     compress: false,
     port: 1234,
     host: 'localhost',

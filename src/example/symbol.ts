@@ -4,7 +4,7 @@ const s = Symbol();
 console.log(s)
 
 const s1 = Symbol();
-console.log(s === s1) // 是不会相等的
+// console.log(s === s1) // 是不会相等的
 
 
 let props = 'name';
@@ -61,4 +61,20 @@ Symbol.keyFor(s3) // 入参是使用Symbol.for全局注册的数据 ，如果是
 
 // 10个Symbol的方法
 
-Symbol.hasInstance 
+// Symbol.hasInstance 
+
+// Symbol.isConcatSpreadable 
+// concat会让数据先扁平化之后在进行合并，如果使用isConcatSpreadable就不会让数据扁平化了
+
+let ss: number[]  = [1,2]
+ss[Symbol.isConcatSpreadable] = false
+console.log([].concat(ss, [2,4,5])) 
+
+
+
+class C extends Array {
+  getName () {
+    return 'jasmine'
+  }
+}
+
