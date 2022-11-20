@@ -11,7 +11,7 @@ getArray<number[]>([1, 1, 2, 3, 32, 4, 34, 35], 4)
 // [T,U] 返回的是元组构成的数组
 const getArray1 = <T, U>(value: T, data: U, times: number): [T, U][] => {
   return new Array(times).fill([value, data])
-}
+};
 
 // 使用泛型定义函数类型
 
