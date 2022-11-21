@@ -169,3 +169,23 @@ const func1 = Symbol("func1")
 class PrivateClass3 {
   static [func1]() {}
 }
+
+
+// 私有属性 # 
+// 在变量前面➕# 表示私有属性
+
+class PrivateClass4 {
+  #end = 12
+}
+
+
+// new.target属性【一般用于构造函数中】
+
+class PrivateClass5  {
+  constructor () {
+    console.log(new.target)
+  }
+  
+}
+const pp1 = new PrivateClass5();
+console.log('pp1pp1pp1', pp1)
