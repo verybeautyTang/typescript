@@ -25,8 +25,41 @@ const infoy = {name: 'xxx'}
 // 函数兼容性
 // 参数个数
 
+// 函数重载
+
+function merge(arg1: number, arg2: number):number
+function merge(arg1: string, arg2: string):string
+function merge(arg1: any, arg2: any) {
+  return arg1 + arg2
+}
+
 // 枚举
 
+enum StatusAs {
+On,
+Off
+}
+
+let s_as = StatusAs.Off
+s_as = 1
+
+
+enum AnimalStatus {
+  Dog,
+  Cat
+}
+
+// class AnimalClass {
+//   public
+
+// }
 // 类
 
 // 泛型
+
+// 类型参数【使用的时候会变成特定的参数的部分]
+interface Data<T>{
+  data: T
+}
+let data1: Data<number>
+let data2: Data<string>
