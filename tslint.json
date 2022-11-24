@@ -10,5 +10,21 @@
         "no-console": false
 
     },
-    "rulesDirectory": []
+    "rulesDirectory": [],
+    "compilerOptions": {
+        "target" : "es5 es6",
+        "module": "commonjs",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "esModuleInterop": true,
+        
+        "baseUrl": "./",
+        "paths": {
+            "*": ["node_modules/@types","src/typing"]
+        },
+        "rootDir": ["src/module", "src/core"],
+        "noResolve": false
+    }
 }
