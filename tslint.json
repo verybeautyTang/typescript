@@ -25,6 +25,7 @@
             "*": ["node_modules/@types","src/typing"]
         },
         "rootDir": ["src/module", "src/core"],
-        "noResolve": false
+        "noResolve": false,
+        "experimentalDecorators": true
     }
 }
