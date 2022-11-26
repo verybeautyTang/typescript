@@ -83,9 +83,9 @@ type ReadOnlyType<T> = {
 
 // Pick Record 都是内置的映射类型
 // Record 将属性改为其他值的场景
-type Pick1<T, K extends keyof T> = {
-  [P in K]: T[P]
-}
+// type Pick<T, K extends keyof T> = {
+//   [P in K]: T[P]
+// }
 
 interface IInfo2 {
   age: number
@@ -98,6 +98,31 @@ const infor2: IInfo2 = {
   age: 18,
   sex: "s",
 }
+
+interface Person {
+  name: string;
+  age: number;
+  gender: "f" | "m"
+}
+
+type PartialPerson = Partial<Person>
+
+type MyPartial<T> = {
+  [k in keyof T]?: T[k]
+}
+
+type MyPartial1 = MyPartial<Person>
+
+type MyPick<T, K extends keyof T> = {
+  [k in K]: T[k]
+}
+
+type Keys = keyof Person
+// const k: Keys = 
+type MyPick1 = MyPick<Person,'name'|'age'>
+
+
+
 
 // function picking<T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> {
 //   const res = {}
