@@ -3,37 +3,37 @@
 // 装饰器工厂，就是函数里面返回一个函数
 
 
-function setProp (target:any) {
-  // ...
-}
-@setProp
+// function setProp (target:any) {
+//   // ...
+// }
+// @setProp
 
 
-// 装饰器工厂
-function setPropFac () {
-  return function () {}
-}
+// // 装饰器工厂
+// function setPropFac () {
+//   return function () {}
+// }
 
-@setPropFac()
-function setName () {
-  console.log('get setName')
-  return (target: string) =>  {
-    console.log('first')
-  }
-}
+// @setPropFac()
+// function setName () {
+//   console.log('get setName')
+//   return (target: string) =>  {
+//     console.log('first')
+//   }
+// }
 
-function setAge () {
-  console.log('get setAge')
-  return (target: string) =>  {
-    console.log('setAge')
-  }
-}
+// function setAge () {
+//   console.log('get setAge')
+//   return (target: string) =>  {
+//     console.log('setAge')
+//   }
+// }
 
-@setName('ss')
-@setAge()
-class clsaaDes {
+// @setName('ss')
+// @setAge()
+// class clsaaDes {
 
-}
+// }
 
 
 
@@ -73,7 +73,7 @@ function classicalDes<T extends { new( ...agrs: any[]):{} }>(target: T) {
     public hello = ' hello'
   }
 }
-@classicalDes 
+@classicalDes
 class Greater {
   public property = 'property';
   public hello: string;
@@ -81,3 +81,4 @@ class Greater {
     this.hello = m;
   }
 }
+
