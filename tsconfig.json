@@ -101,7 +101,7 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "exclude": [], // 指定哪些文件不编译，
-  "extends": "", //指定一个别的tsconfig.json进行继承
+  // "extends": "", //指定一个别的tsconfig.json进行继承
   "include": [], // 指定那些文件要编译
   "references": [], // 数组 要引用的项目
 }
