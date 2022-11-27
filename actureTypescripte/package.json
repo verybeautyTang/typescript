@@ -1,0 +1,21 @@
+{
+  "name": "acture-typescripte-map",
+  "version": "1.0.0",
+  "description": "typescript",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript、jasmine"
+  ],
+  "author": "jasmine",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "acture-typescripte": "^1.0.0",
+    "indexof": "^0.0.1",
+    "typescript": "^4.9.3"
+  }
+}

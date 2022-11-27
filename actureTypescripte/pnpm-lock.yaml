@@ -1,0 +1,33 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@types/node': ^18.11.9
+  acture-typescripte: ^1.0.0
+  indexof: ^0.0.1
+  typescript: ^4.9.3
+
+devDependencies:
+  '@types/node': 18.11.9
+  acture-typescripte: 1.0.0
+  indexof: 0.0.1
+  typescript: 4.9.3
+
+packages:
+
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
+    dev: true
+
+  /acture-typescripte/1.0.0:
+    resolution: {integrity: sha512-vLmj2skWAamnEQRYkHER34BQnYFk8FXoOufMDPTqJQZnGdry3h0U2ooFUj0RKWtMv3zSOp2GBCAxMxJTQlarOw==}
+    dev: true
+
+  /indexof/0.0.1:
+    resolution: {integrity: sha512-i0G7hLJ1z0DE8dsqJa2rycj9dBmNKgXBvotXtZYXakU9oivfB9Uj2ZBC27qqef2U58/ZLwalxa1X/RDCdkHtVg==}
+    dev: true
+
+  /typescript/4.9.3:
+    resolution: {integrity: sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
