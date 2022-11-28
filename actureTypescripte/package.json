@@ -17,5 +17,9 @@
     "acture-typescripte": "^1.0.0",
     "indexof": "^0.0.1",
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@vue/cli": "^5.0.8",
+    "g": "^2.0.1"
   }
 }
